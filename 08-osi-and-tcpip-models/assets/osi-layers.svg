@@ -1,0 +1,35 @@
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="400" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">OSI Model — 7 layers, application at the top, physical hardware at the bottom</text>
+
+  <!-- Layer 7 -->
+  <rect x="150" y="45" width="400" height="40" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="170" y="70" font-size="12" fill="#7e22ce">7. Application (HTTP, DNS)</text>
+
+  <!-- Layer 6 -->
+  <rect x="150" y="85" width="400" height="40" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="170" y="110" font-size="12" fill="#7e22ce">6. Presentation (TLS, encoding)</text>
+
+  <!-- Layer 5 -->
+  <rect x="150" y="125" width="400" height="40" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="170" y="150" font-size="12" fill="#7e22ce">5. Session</text>
+
+  <!-- Layer 4 -->
+  <rect x="150" y="165" width="400" height="40" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="170" y="190" font-size="12" fill="#854d0e">4. Transport (TCP, UDP)</text>
+
+  <!-- Layer 3 -->
+  <rect x="150" y="205" width="400" height="40" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="170" y="230" font-size="12" fill="#1d4ed8">3. Network (IP)</text>
+
+  <!-- Layer 2 -->
+  <rect x="150" y="245" width="400" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="170" y="270" font-size="12" fill="#166534">2. Data Link (MAC, switches)</text>
+
+  <!-- Layer 1 -->
+  <rect x="150" y="285" width="400" height="40" fill="#f9fafb" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="170" y="310" font-size="12" fill="#374151">1. Physical (cables, Wi-Fi)</text>
+
+  <text x="350" y="350" font-size="11" fill="#6b7280" text-anchor="middle">Each layer only depends on the one directly below it.</text>
+</svg>
