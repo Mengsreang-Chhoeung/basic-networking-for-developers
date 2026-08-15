@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="260" fill="#ffffff"/>
+
+  <text x="380" y="25" font-size="13" fill="#374151" text-anchor="middle">A firewall decides which traffic is allowed to pass, and which is blocked</text>
+
+  <!-- internet side -->
+  <rect x="30" y="90" width="150" height="70" rx="10" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="105" y="120" font-size="12" font-weight="700" fill="#7e22ce" text-anchor="middle">Internet</text>
+  <text x="105" y="138" font-size="10" fill="#7e22ce" text-anchor="middle">traffic coming in</text>
+
+  <!-- firewall -->
+  <rect x="300" y="70" width="160" height="110" rx="12" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="380" y="100" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">Firewall</text>
+  <text x="380" y="120" font-size="10" fill="#854d0e" text-anchor="middle">checks each</text>
+  <text x="380" y="136" font-size="10" fill="#854d0e" text-anchor="middle">connection against</text>
+  <text x="380" y="152" font-size="10" fill="#854d0e" text-anchor="middle">a set of rules</text>
+
+  <!-- laptop -->
+  <rect x="580" y="90" width="150" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="655" y="120" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Laptop</text>
+  <text x="655" y="138" font-size="10" fill="#1d4ed8" text-anchor="middle">or server</text>
+
+  <line x1="180" y1="115" x2="295" y2="115" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrowFW1)"/>
+  <text x="238" y="105" font-size="9" fill="#166534" text-anchor="middle">allowed</text>
+
+  <line x1="180" y1="150" x2="260" y2="150" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="255" y1="140" x2="275" y2="160" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="275" y1="140" x2="255" y2="160" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="220" y="175" font-size="9" fill="#991b1b" text-anchor="middle">blocked</text>
+
+  <line x1="460" y1="115" x2="575" y2="115" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowFW1)"/>
+
+  <text x="380" y="225" font-size="10" fill="#6b7280" text-anchor="middle">matching rules pass through; everything else is dropped</text>
+
+  <defs>
+    <marker id="arrowFW1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
