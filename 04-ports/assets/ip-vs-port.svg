@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="220" fill="#ffffff"/>
+
+  <!-- IP card -->
+  <rect x="90" y="50" width="260" height="120" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="220" y="85" font-size="16" font-weight="700" fill="#1d4ed8" text-anchor="middle">IP Address</text>
+  <text x="220" y="110" font-size="13" fill="#1e40af" text-anchor="middle" font-family="monospace">192.168.1.12</text>
+  <text x="220" y="135" font-size="11" fill="#1e40af" text-anchor="middle">Gets you to the right device</text>
+
+  <text x="400" y="118" font-size="22" fill="#374151" text-anchor="middle">+</text>
+
+  <!-- Port card -->
+  <rect x="450" y="50" width="260" height="120" rx="12" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="580" y="85" font-size="16" font-weight="700" fill="#854d0e" text-anchor="middle">Port</text>
+  <text x="580" y="110" font-size="13" fill="#854d0e" text-anchor="middle" font-family="monospace">:8080</text>
+  <text x="580" y="135" font-size="11" fill="#854d0e" text-anchor="middle">Gets you to the right app</text>
+
+  <text x="400" y="200" font-size="13" fill="#166534" text-anchor="middle" font-family="monospace">192.168.1.12:8080 — a full socket address</text>
+</svg>
