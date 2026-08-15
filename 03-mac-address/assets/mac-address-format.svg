@@ -1,0 +1,12 @@
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="240" fill="#ffffff"/>
+
+  <!-- Laptop -->
+  <rect x="290" y="50" width="220" height="100" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="400" y="85" font-size="16" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Laptop's</text>
+  <text x="400" y="105" font-size="16" font-weight="700" fill="#1d4ed8" text-anchor="middle">Wi-Fi Card</text>
+  <text x="400" y="132" font-size="14" fill="#1e40af" text-anchor="middle" font-family="monospace">3C:22:FB:4A:9E:01</text>
+
+  <text x="400" y="185" font-size="13" fill="#374151" text-anchor="middle">A MAC address is burned into the network hardware itself —</text>
+  <text x="400" y="205" font-size="13" fill="#374151" text-anchor="middle">like a serial number that (mostly) never changes.</text>
+</svg>
