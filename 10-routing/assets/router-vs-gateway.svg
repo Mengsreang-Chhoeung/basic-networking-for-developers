@@ -1,0 +1,33 @@
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="260" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">Same device, two jobs: router (hardware) and gateway (address/role)</text>
+
+  <!-- subnet box -->
+  <rect x="40" y="55" width="280" height="170" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="180" y="78" font-size="11" fill="#1d4ed8" text-anchor="middle">Home subnet 192.168.1.0/24</text>
+
+  <rect x="65" y="95" width="90" height="55" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="110" y="127" font-size="10" fill="#1d4ed8" text-anchor="middle">Laptop</text>
+
+  <rect x="185" y="95" width="90" height="55" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="230" y="127" font-size="10" fill="#1d4ed8" text-anchor="middle">Phone</text>
+
+  <text x="180" y="195" font-size="10" fill="#1e40af" text-anchor="middle">devices inside the subnet</text>
+
+  <!-- Router/Gateway device -->
+  <rect x="420" y="90" width="240" height="90" rx="12" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="540" y="118" font-size="13" font-weight="700" fill="#854d0e" text-anchor="middle">Router</text>
+  <text x="540" y="136" font-size="10" fill="#854d0e" text-anchor="middle">the hardware forwarding packets</text>
+  <text x="540" y="155" font-size="10" fill="#7e22ce" text-anchor="middle" font-family="monospace">gateway address: 192.168.1.1</text>
+
+  <line x1="320" y1="135" x2="415" y2="135" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowG)"/>
+
+  <text x="540" y="215" font-size="10" fill="#6b7280" text-anchor="middle">"router" = the box · "gateway" = the address devices send to</text>
+
+  <defs>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
