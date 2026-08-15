@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="240" fill="#ffffff"/>
+
+  <!-- IPv4 card -->
+  <rect x="60" y="40" width="320" height="160" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="220" y="75" font-size="18" font-weight="700" fill="#1d4ed8" text-anchor="middle">IPv4</text>
+  <text x="220" y="105" font-size="14" fill="#1e40af" text-anchor="middle" font-family="monospace">192.168.1.12</text>
+  <text x="220" y="130" font-size="12" fill="#1e40af" text-anchor="middle">4 numbers, 0-255 each</text>
+  <text x="220" y="150" font-size="12" fill="#1e40af" text-anchor="middle">~4.3 billion addresses</text>
+  <text x="220" y="170" font-size="12" fill="#1e40af" text-anchor="middle">Still the most common today</text>
+
+  <!-- IPv6 card -->
+  <rect x="420" y="40" width="320" height="160" rx="12" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="580" y="75" font-size="18" font-weight="700" fill="#7e22ce" text-anchor="middle">IPv6</text>
+  <text x="580" y="105" font-size="12" fill="#6b21a8" text-anchor="middle" font-family="monospace">2001:0db8:85a3::8a2e:370:7334</text>
+  <text x="580" y="130" font-size="12" fill="#6b21a8" text-anchor="middle">8 groups of hex digits</text>
+  <text x="580" y="150" font-size="12" fill="#6b21a8" text-anchor="middle">Huge address space</text>
+  <text x="580" y="170" font-size="12" fill="#6b21a8" text-anchor="middle">Built to solve IPv4 running out</text>
+</svg>
