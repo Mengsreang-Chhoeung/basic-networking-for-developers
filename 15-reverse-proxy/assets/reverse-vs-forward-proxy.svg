@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="280" fill="#ffffff"/>
+
+  <text x="380" y="25" font-size="13" fill="#374151" text-anchor="middle">Forward proxy fronts the client; reverse proxy fronts the server</text>
+
+  <!-- forward proxy row -->
+  <text x="40" y="65" font-size="11" font-weight="700" fill="#7e22ce">Forward Proxy</text>
+  <rect x="40" y="75" width="140" height="55" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="110" y="107" font-size="10" fill="#1d4ed8" text-anchor="middle">Your Laptop</text>
+
+  <rect x="230" y="75" width="140" height="55" rx="8" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="300" y="107" font-size="10" fill="#7e22ce" text-anchor="middle">Forward Proxy</text>
+
+  <rect x="420" y="75" width="140" height="55" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="490" y="107" font-size="10" fill="#166534" text-anchor="middle">Any Website</text>
+
+  <line x1="180" y1="102" x2="225" y2="102" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowFR)"/>
+  <line x1="370" y1="102" x2="415" y2="102" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowFR)"/>
+  <text x="600" y="107" font-size="9" fill="#6b7280">hides the client from the site</text>
+
+  <!-- reverse proxy row -->
+  <text x="40" y="175" font-size="11" font-weight="700" fill="#ca8a04">Reverse Proxy</text>
+  <rect x="40" y="185" width="140" height="55" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="110" y="217" font-size="10" fill="#1d4ed8" text-anchor="middle">Any Client</text>
+
+  <rect x="230" y="185" width="140" height="55" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="300" y="217" font-size="10" fill="#854d0e" text-anchor="middle">Reverse Proxy</text>
+
+  <rect x="420" y="185" width="140" height="55" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="490" y="217" font-size="10" fill="#166534" text-anchor="middle">Your App Server</text>
+
+  <line x1="180" y1="212" x2="225" y2="212" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowFR)"/>
+  <line x1="370" y1="212" x2="415" y2="212" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowFR)"/>
+  <text x="600" y="217" font-size="9" fill="#6b7280">hides the server from the client</text>
+
+  <defs>
+    <marker id="arrowFR" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
