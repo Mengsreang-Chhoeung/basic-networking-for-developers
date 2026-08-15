@@ -1,0 +1,48 @@
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="240" fill="#ffffff"/>
+
+  <!-- Internet cloud -->
+  <ellipse cx="70" cy="110" rx="60" ry="40" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+  <text x="70" y="115" font-size="13" fill="#374151" text-anchor="middle">Internet</text>
+
+  <line x1="130" y1="110" x2="185" y2="110" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Modem -->
+  <rect x="185" y="80" width="110" height="60" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="240" y="105" font-size="14" font-weight="700" fill="#854d0e" text-anchor="middle">Modem</text>
+  <text x="240" y="122" font-size="10" fill="#854d0e" text-anchor="middle">plugs into your ISP</text>
+
+  <line x1="295" y1="110" x2="350" y2="110" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Router -->
+  <rect x="350" y="80" width="110" height="60" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="405" y="105" font-size="14" font-weight="700" fill="#1d4ed8" text-anchor="middle">Router</text>
+  <text x="405" y="122" font-size="10" fill="#1d4ed8" text-anchor="middle">shares Wi-Fi + internet</text>
+
+  <line x1="460" y1="110" x2="515" y2="110" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Switch -->
+  <rect x="515" y="80" width="110" height="60" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="570" y="105" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">Switch</text>
+  <text x="570" y="122" font-size="10" fill="#166534" text-anchor="middle">links wired devices</text>
+
+  <!-- Devices -->
+  <line x1="600" y1="140" x2="660" y2="190" stroke="#166534" stroke-width="1.5"/>
+  <line x1="570" y1="140" x2="570" y2="190" stroke="#166534" stroke-width="1.5"/>
+  <line x1="540" y1="140" x2="480" y2="190" stroke="#166534" stroke-width="1.5"/>
+
+  <circle cx="660" cy="205" r="22" fill="#ffffff" stroke="#166534" stroke-width="2"/>
+  <text x="660" y="210" font-size="10" fill="#166534" text-anchor="middle">Smart TV</text>
+  <circle cx="570" cy="205" r="22" fill="#ffffff" stroke="#166534" stroke-width="2"/>
+  <text x="570" y="210" font-size="11" fill="#166534" text-anchor="middle">Phone</text>
+  <circle cx="480" cy="205" r="22" fill="#ffffff" stroke="#166534" stroke-width="2"/>
+  <text x="480" y="210" font-size="10" fill="#166534" text-anchor="middle">Laptop</text>
+
+  <text x="450" y="30" font-size="13" fill="#374151" text-anchor="middle">At home, one box on your desk is usually the modem + router + switch, all in one.</text>
+
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>

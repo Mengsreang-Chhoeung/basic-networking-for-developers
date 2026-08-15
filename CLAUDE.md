@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-This repository holds the content for **"Basic Networking for Developers"**, a YouTube tutorial series that teaches the networking concepts developers actually run into while building and deploying applications — not network engineering theory. The repo is currently empty of source files; this document is the plan future work should follow as episodes, notes, scripts, diagrams, or demo code are added.
+This repository holds the content for **"Basic Networking for Developers"**, a written tutorial series (not video scripts) that teaches the networking concepts developers actually run into while building and deploying applications — not network engineering theory. Each part lives in its own numbered folder (`01-what-is-a-network`, `02-ip-address`, …) with a `README.md` written as a standalone tutorial doc, in the same style as the author's other tutorial repo, [docker-cli-tutorial](https://github.com/Mengsreang-Chhoeung/docker-cli-tutorial): a `## Table of Contents` linking to `##`-level sections, explanatory prose with **bold** key terms, bullet lists, tables for comparisons, `> **Note:**` blockquotes for asides, and fenced code blocks for real commands.
 
 ## Audience and framing
 
@@ -45,6 +45,10 @@ Full per-part topic breakdown:
 
 ## Content conventions
 
+- Format: each part's `README.md` is a self-contained written tutorial, not a video script — no "intro/outro," speaker notes, or talking-to-camera phrasing. Structure: `# Part N: Title` → `## Table of Contents` → `---` → `## <number>. <Subtopic>` sections matching the TOC.
 - Each part should stay scoped to its numbered topic above — don't bleed Level 3 (cloud/DevOps) concepts into Level 1 fundamentals content.
 - Practical, runnable examples (shell commands, Docker Compose snippets, curl calls) are preferred over prose-only explanations.
 - Parts 13, 17, and 20 in particular are meant to be hands-on/demo-driven rather than conceptual — prioritize working commands and reproducible setups over slide-style explanation.
+- Cross-link related parts with relative markdown links (e.g. `[Part 2](../02-ip-address)`) instead of restating their content.
+- Favor a diagram over a paragraph: each section that describes a flow, comparison, or set of components should lead with an SVG diagram (stored in that part's `assets/` folder, e.g. `01-what-is-a-network/assets/client-server.svg`) and follow it with a short bullet list, not dense prose. Keep prose to a few lines per section.
+- Keep every example simple and junior/student-friendly — both in diagrams and in text. Use relatable everyday scenarios (e.g. "your home Wi-Fi with a laptop and phone talking to a website server") instead of senior/enterprise setups (e.g. "Company WAN linking Office A and Office B"). Simple examples work for readers at every level; complex ones only work for seniors, so default to simple.
