@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="240" fill="#ffffff"/>
+
+  <text x="400" y="25" font-size="13" fill="#374151" text-anchor="middle">A packet hops from your laptop through routers to reach a server</text>
+
+  <!-- Laptop -->
+  <rect x="40" y="80" width="140" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="110" y="110" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Laptop</text>
+  <text x="110" y="128" font-size="10" fill="#1d4ed8" text-anchor="middle" font-family="monospace">192.168.1.2</text>
+
+  <!-- Home router -->
+  <rect x="260" y="80" width="140" height="70" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="330" y="110" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">Home Router</text>
+  <text x="330" y="128" font-size="10" fill="#854d0e" text-anchor="middle">default gateway</text>
+
+  <!-- ISP router -->
+  <rect x="480" y="80" width="140" height="70" rx="10" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="550" y="110" font-size="12" font-weight="700" fill="#7e22ce" text-anchor="middle">ISP Router</text>
+  <text x="550" y="128" font-size="10" fill="#7e22ce" text-anchor="middle">next hop</text>
+
+  <!-- Server -->
+  <rect x="640" y="80" width="120" height="70" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="700" y="110" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">Server</text>
+  <text x="700" y="128" font-size="10" fill="#166534" text-anchor="middle">destination</text>
+
+  <line x1="180" y1="115" x2="255" y2="115" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowR)"/>
+  <line x1="400" y1="115" x2="475" y2="115" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowR)"/>
+  <line x1="620" y1="115" x2="635" y2="115" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowR)"/>
+
+  <text x="400" y="200" font-size="10" fill="#6b7280" text-anchor="middle">each hop only knows the next step, not the whole path</text>
+
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
