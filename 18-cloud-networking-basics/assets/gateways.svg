@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="760" height="300" fill="#ffffff"/>
+
+  <text x="380" y="25" font-size="13" fill="#374151" text-anchor="middle">Internet Gateway (two-way) vs. NAT Gateway (outbound only)</text>
+
+  <text x="130" y="55" font-size="10" fill="#6b7280" text-anchor="middle">Public Subnet</text>
+  <rect x="30" y="70" width="200" height="55" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="102" font-size="10" font-weight="700" fill="#1d4ed8" text-anchor="middle">Web Server</text>
+
+  <rect x="30" y="150" width="200" height="55" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="130" y="175" font-size="10" font-weight="700" fill="#854d0e" text-anchor="middle">Internet Gateway</text>
+  <text x="130" y="192" font-size="9" fill="#854d0e" text-anchor="middle">in ↔ out</text>
+
+  <line x1="130" y1="125" x2="130" y2="145" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowGW1)"/>
+  <line x1="130" y1="145" x2="130" y2="125" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowGW1)"/>
+
+  <line x1="130" y1="205" x2="130" y2="250" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowGW1)"/>
+  <text x="200" y="230" font-size="9" fill="#6b7280" text-anchor="middle">Internet</text>
+
+  <text x="630" y="55" font-size="10" fill="#6b7280" text-anchor="middle">Private Subnet</text>
+  <rect x="530" y="70" width="200" height="55" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="630" y="102" font-size="10" font-weight="700" fill="#166534" text-anchor="middle">Database</text>
+
+  <rect x="530" y="150" width="200" height="55" rx="8" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="630" y="175" font-size="10" font-weight="700" fill="#6b21a8" text-anchor="middle">NAT Gateway</text>
+  <text x="630" y="192" font-size="9" fill="#6b21a8" text-anchor="middle">out only</text>
+
+  <line x1="630" y1="125" x2="630" y2="145" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowGW1)"/>
+  <line x1="630" y1="205" x2="630" y2="250" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowGW1)"/>
+  <text x="700" y="230" font-size="9" fill="#6b7280" text-anchor="middle">Internet</text>
+  <text x="500" y="230" font-size="16" fill="#dc2626" text-anchor="middle">✕</text>
+  <text x="500" y="248" font-size="8" fill="#991b1b" text-anchor="middle">no inbound</text>
+
+  <text x="380" y="285" font-size="10" fill="#6b7280" text-anchor="middle">the database can still download updates outbound, but nothing on the internet can initiate a connection to it</text>
+
+  <defs>
+    <marker id="arrowGW1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
