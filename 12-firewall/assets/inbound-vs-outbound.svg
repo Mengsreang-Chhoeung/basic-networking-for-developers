@@ -1,0 +1,34 @@
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="240" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">Inbound traffic (coming in) vs. outbound traffic (going out)</text>
+
+  <!-- device in middle -->
+  <rect x="290" y="85" width="120" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="350" y="115" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your</text>
+  <text x="350" y="133" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Device</text>
+
+  <!-- inbound source -->
+  <rect x="40" y="60" width="150" height="60" rx="10" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="115" y="95" font-size="11" fill="#7e22ce" text-anchor="middle">Someone connecting</text>
+  <text x="115" y="110" font-size="11" fill="#7e22ce" text-anchor="middle">to you</text>
+
+  <line x1="190" y1="90" x2="285" y2="105" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrowIO)"/>
+  <text x="220" y="75" font-size="10" font-weight="700" fill="#166534">inbound</text>
+
+  <!-- outbound destination -->
+  <rect x="510" y="130" width="150" height="60" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="585" y="165" font-size="11" fill="#166534" text-anchor="middle">A site or API</text>
+  <text x="585" y="180" font-size="11" fill="#166534" text-anchor="middle">you request</text>
+
+  <line x1="410" y1="140" x2="505" y2="155" stroke="#ca8a04" stroke-width="2.5" marker-end="url(#arrowIO)"/>
+  <text x="470" y="200" font-size="10" font-weight="700" fill="#854d0e">outbound</text>
+
+  <text x="350" y="220" font-size="10" fill="#6b7280" text-anchor="middle">firewalls usually allow outbound freely, and restrict inbound tightly</text>
+
+  <defs>
+    <marker id="arrowIO" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
