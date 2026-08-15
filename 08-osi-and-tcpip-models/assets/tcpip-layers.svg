@@ -1,0 +1,25 @@
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="320" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">TCP/IP Model — the 4 practical layers the real internet runs on</text>
+
+  <!-- Application -->
+  <rect x="150" y="45" width="400" height="55" rx="8" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="170" y="70" font-size="13" font-weight="700" fill="#7e22ce">Application</text>
+  <text x="170" y="88" font-size="10" fill="#7e22ce">HTTP, DNS (covers OSI layers 5-7)</text>
+
+  <!-- Transport -->
+  <rect x="150" y="110" width="400" height="55" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="170" y="135" font-size="13" font-weight="700" fill="#854d0e">Transport</text>
+  <text x="170" y="153" font-size="10" fill="#854d0e">TCP, UDP (OSI layer 4)</text>
+
+  <!-- Internet -->
+  <rect x="150" y="175" width="400" height="55" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="170" y="200" font-size="13" font-weight="700" fill="#1d4ed8">Internet</text>
+  <text x="170" y="218" font-size="10" fill="#1d4ed8">IP addressing (OSI layer 3)</text>
+
+  <!-- Network Access -->
+  <rect x="150" y="240" width="400" height="55" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="170" y="265" font-size="13" font-weight="700" fill="#166534">Network Access</text>
+  <text x="170" y="283" font-size="10" fill="#166534">Ethernet, Wi-Fi, MAC (OSI layers 1-2)</text>
+</svg>

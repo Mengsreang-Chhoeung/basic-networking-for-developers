@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="340" fill="#ffffff"/>
+
+  <text x="400" y="25" font-size="13" fill="#374151" text-anchor="middle">A request moves down the layers on your laptop, then back up on the server</text>
+
+  <!-- Laptop column -->
+  <text x="150" y="55" font-size="13" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Laptop</text>
+  <rect x="60" y="65" width="180" height="34" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="150" y="87" font-size="10" fill="#7e22ce" text-anchor="middle">Application (HTTP)</text>
+  <rect x="60" y="99" width="180" height="34" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="150" y="121" font-size="10" fill="#854d0e" text-anchor="middle">Transport (TCP)</text>
+  <rect x="60" y="133" width="180" height="34" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="150" y="155" font-size="10" fill="#1d4ed8" text-anchor="middle">Internet (IP)</text>
+  <rect x="60" y="167" width="180" height="34" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="150" y="189" font-size="10" fill="#166534" text-anchor="middle">Network Access (MAC)</text>
+
+  <line x1="150" y1="201" x2="150" y2="230" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Wire -->
+  <text x="400" y="250" font-size="11" fill="#6b7280" text-anchor="middle">signals travel across the network</text>
+  <line x1="240" y1="230" x2="560" y2="230" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrowRight)"/>
+
+  <!-- Server column -->
+  <text x="650" y="55" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">Server</text>
+  <rect x="560" y="65" width="180" height="34" fill="#fdf4ff" stroke="#9333ea" stroke-width="1.5"/>
+  <text x="650" y="87" font-size="10" fill="#7e22ce" text-anchor="middle">Application (HTTP)</text>
+  <rect x="560" y="99" width="180" height="34" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="650" y="121" font-size="10" fill="#854d0e" text-anchor="middle">Transport (TCP)</text>
+  <rect x="560" y="133" width="180" height="34" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="650" y="155" font-size="10" fill="#1d4ed8" text-anchor="middle">Internet (IP)</text>
+  <rect x="560" y="167" width="180" height="34" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="650" y="189" font-size="10" fill="#166534" text-anchor="middle">Network Access (MAC)</text>
+
+  <line x1="650" y1="230" x2="650" y2="201" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowUp)"/>
+
+  <text x="400" y="300" font-size="11" fill="#374151" text-anchor="middle">Down through the layers to send, back up through them to receive.</text>
+
+  <defs>
+    <marker id="arrowDown" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,0 L5,10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M5,0 L10,10 L0,10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>
