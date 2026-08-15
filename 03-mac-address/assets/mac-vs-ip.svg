@@ -1,0 +1,21 @@
+<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="260" fill="#ffffff"/>
+
+  <!-- MAC card -->
+  <rect x="60" y="40" width="320" height="180" rx="12" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="220" y="75" font-size="18" font-weight="700" fill="#7e22ce" text-anchor="middle">MAC Address</text>
+  <text x="220" y="105" font-size="13" fill="#6b21a8" text-anchor="middle" font-family="monospace">3C:22:FB:4A:9E:01</text>
+  <text x="220" y="130" font-size="12" fill="#6b21a8" text-anchor="middle">Set by the hardware maker</text>
+  <text x="220" y="150" font-size="12" fill="#6b21a8" text-anchor="middle">Stays the same everywhere</text>
+  <text x="220" y="170" font-size="12" fill="#6b21a8" text-anchor="middle">Only matters on the local network</text>
+  <text x="220" y="190" font-size="12" fill="#6b21a8" text-anchor="middle">Used by switches to deliver frames</text>
+
+  <!-- IP card -->
+  <rect x="420" y="40" width="320" height="180" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="580" y="75" font-size="18" font-weight="700" fill="#1d4ed8" text-anchor="middle">IP Address</text>
+  <text x="580" y="105" font-size="13" fill="#1e40af" text-anchor="middle" font-family="monospace">192.168.1.12</text>
+  <text x="580" y="130" font-size="12" fill="#1e40af" text-anchor="middle">Assigned by the network</text>
+  <text x="580" y="150" font-size="12" fill="#1e40af" text-anchor="middle">Can change (new Wi-Fi, new place)</text>
+  <text x="580" y="170" font-size="12" fill="#1e40af" text-anchor="middle">Works across networks, over the internet</text>
+  <text x="580" y="190" font-size="12" fill="#1e40af" text-anchor="middle">Used by routers to deliver packets</text>
+</svg>
