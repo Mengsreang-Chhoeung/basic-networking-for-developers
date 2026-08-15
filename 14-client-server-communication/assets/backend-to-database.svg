@@ -1,0 +1,25 @@
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="240" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">A backend opens a direct TCP connection to the database</text>
+
+  <rect x="60" y="80" width="200" height="70" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="160" y="110" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">Backend API</text>
+  <text x="160" y="128" font-size="10" fill="#166534" text-anchor="middle">reads DB_HOST, DB_PORT, etc.</text>
+
+  <rect x="440" y="80" width="200" height="70" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="540" y="110" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">PostgreSQL</text>
+  <text x="540" y="128" font-size="10" fill="#854d0e" text-anchor="middle">listening on port 5432</text>
+
+  <line x1="260" y1="115" x2="435" y2="115" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowBD)"/>
+  <text x="350" y="102" font-size="9" fill="#6b7280" text-anchor="middle">TCP connection, port 5432</text>
+
+  <text x="350" y="190" font-size="10" fill="#6b7280" text-anchor="middle">no HTTP here — just the database's own wire protocol over TCP</text>
+  <text x="350" y="208" font-size="10" fill="#6b7280" text-anchor="middle">credentials come from environment variables, not hardcoded values</text>
+
+  <defs>
+    <marker id="arrowBD" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
