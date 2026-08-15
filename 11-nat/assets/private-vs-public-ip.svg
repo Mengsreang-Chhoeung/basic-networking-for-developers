@@ -1,0 +1,30 @@
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="240" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">Private IP (inside the house) vs. public IP (outside, on the internet)</text>
+
+  <!-- private box -->
+  <rect x="70" y="60" width="260" height="120" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="200" y="90" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Private IP</text>
+  <text x="200" y="112" font-size="13" fill="#1d4ed8" text-anchor="middle" font-family="monospace">192.168.1.2</text>
+  <text x="200" y="135" font-size="10" fill="#1d4ed8" text-anchor="middle">only means something</text>
+  <text x="200" y="150" font-size="10" fill="#1d4ed8" text-anchor="middle">inside your home network</text>
+
+  <!-- public box -->
+  <rect x="370" y="60" width="260" height="120" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="500" y="90" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">Public IP</text>
+  <text x="500" y="112" font-size="13" fill="#166534" text-anchor="middle" font-family="monospace">203.0.113.5</text>
+  <text x="500" y="135" font-size="10" fill="#166534" text-anchor="middle">visible on the internet,</text>
+  <text x="500" y="150" font-size="10" fill="#166534" text-anchor="middle">assigned by your ISP</text>
+
+  <line x1="330" y1="120" x2="365" y2="120" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowP)"/>
+  <text x="348" y="105" font-size="9" fill="#6b7280" text-anchor="middle">NAT</text>
+
+  <text x="350" y="215" font-size="10" fill="#6b7280" text-anchor="middle">the router translates one into the other as traffic crosses it</text>
+
+  <defs>
+    <marker id="arrowP" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
