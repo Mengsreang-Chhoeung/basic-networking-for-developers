@@ -1,0 +1,26 @@
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="700" height="240" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="13" fill="#374151" text-anchor="middle">SSH uses a key pair instead of a password</text>
+
+  <rect x="60" y="70" width="200" height="80" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="160" y="98" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Laptop</text>
+  <text x="160" y="116" font-size="9" fill="#1d4ed8" text-anchor="middle">holds the private key</text>
+  <text x="160" y="132" font-size="9" fill="#1d4ed8" text-anchor="middle">(never shared)</text>
+
+  <rect x="440" y="70" width="200" height="80" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="540" y="98" font-size="11" font-weight="700" fill="#166534" text-anchor="middle">Cloud Server</text>
+  <text x="540" y="116" font-size="9" fill="#166534" text-anchor="middle">holds the matching</text>
+  <text x="540" y="132" font-size="9" fill="#166534" text-anchor="middle">public key</text>
+
+  <line x1="260" y1="110" x2="435" y2="110" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowSSH)"/>
+  <text x="350" y="97" font-size="9" fill="#6b7280" text-anchor="middle">ssh -i my-key.pem user@server</text>
+
+  <text x="350" y="205" font-size="10" fill="#6b7280" text-anchor="middle">the server only lets you in if your private key matches an authorized public key</text>
+
+  <defs>
+    <marker id="arrowSSH" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
