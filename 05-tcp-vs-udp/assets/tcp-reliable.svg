@@ -1,0 +1,28 @@
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="240" fill="#ffffff"/>
+
+  <!-- Laptop -->
+  <rect x="50" y="80" width="180" height="90" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="140" y="130" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Laptop</text>
+
+  <!-- Server -->
+  <rect x="570" y="80" width="180" height="90" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="660" y="130" font-size="15" font-weight="700" fill="#166534" text-anchor="middle">Server</text>
+
+  <line x1="235" y1="100" x2="565" y2="100" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowT1)"/>
+  <text x="400" y="90" font-size="10" fill="#374151" text-anchor="middle">Packet 1, 2, 3 sent</text>
+
+  <line x1="565" y1="130" x2="235" y2="130" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowT2)"/>
+  <text x="400" y="150" font-size="10" fill="#166534" text-anchor="middle">"Got 1 and 3, resend 2" — TCP asks again</text>
+
+  <text x="400" y="30" font-size="13" fill="#374151" text-anchor="middle">TCP tracks every packet and re-sends anything that goes missing.</text>
+
+  <defs>
+    <marker id="arrowT1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowT2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+</svg>
