@@ -1,0 +1,33 @@
+<svg viewBox="0 0 820 220" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="820" height="220" fill="#ffffff"/>
+
+  <text x="410" y="25" font-size="13" fill="#374151" text-anchor="middle">"I can't reach api.example.com" — narrowing down where it breaks</text>
+
+  <rect x="20" y="70" width="150" height="60" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="95" y="95" font-size="11" font-weight="700" fill="#854d0e" text-anchor="middle" font-family="monospace">dig</text>
+  <text x="95" y="112" font-size="9" fill="#854d0e" text-anchor="middle">does the domain resolve?</text>
+
+  <rect x="210" y="70" width="150" height="60" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="285" y="95" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="monospace">ping</text>
+  <text x="285" y="112" font-size="9" fill="#1d4ed8" text-anchor="middle">is the host reachable?</text>
+
+  <rect x="400" y="70" width="150" height="60" rx="8" fill="#fdf4ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="475" y="95" font-size="11" font-weight="700" fill="#7e22ce" text-anchor="middle" font-family="monospace">nc -zv</text>
+  <text x="475" y="112" font-size="9" fill="#7e22ce" text-anchor="middle">is the port open?</text>
+
+  <rect x="590" y="70" width="150" height="60" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="665" y="95" font-size="11" font-weight="700" fill="#166534" text-anchor="middle" font-family="monospace">curl -v</text>
+  <text x="665" y="112" font-size="9" fill="#166534" text-anchor="middle">what does the app say?</text>
+
+  <line x1="170" y1="100" x2="205" y2="100" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowT)"/>
+  <line x1="360" y1="100" x2="395" y2="100" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowT)"/>
+  <line x1="550" y1="100" x2="585" y2="100" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowT)"/>
+
+  <text x="410" y="175" font-size="10" fill="#6b7280" text-anchor="middle">each step rules out one layer of the problem before moving to the next</text>
+
+  <defs>
+    <marker id="arrowT" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
