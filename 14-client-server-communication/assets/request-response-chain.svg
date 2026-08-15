@@ -1,0 +1,38 @@
+<svg viewBox="0 0 780 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="780" height="260" fill="#ffffff"/>
+
+  <text x="390" y="25" font-size="13" fill="#374151" text-anchor="middle">Loading a page is really a chain of separate connections</text>
+
+  <rect x="30" y="80" width="180" height="70" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="120" y="110" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">Your Browser</text>
+  <text x="120" y="128" font-size="10" fill="#1d4ed8" text-anchor="middle">(the todo app page)</text>
+
+  <rect x="300" y="80" width="180" height="70" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="390" y="110" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">Backend API</text>
+  <text x="390" y="128" font-size="10" fill="#166534" text-anchor="middle">(runs your code)</text>
+
+  <rect x="570" y="80" width="180" height="70" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="660" y="110" font-size="12" font-weight="700" fill="#854d0e" text-anchor="middle">Database</text>
+  <text x="660" y="128" font-size="10" fill="#854d0e" text-anchor="middle">(stores the todos)</text>
+
+  <line x1="210" y1="100" x2="295" y2="100" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrowRC)"/>
+  <text x="252" y="90" font-size="9" fill="#166534" text-anchor="middle">HTTP request</text>
+
+  <line x1="295" y1="130" x2="210" y2="130" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowRC)"/>
+  <text x="252" y="147" font-size="9" fill="#6b7280" text-anchor="middle">JSON response</text>
+
+  <line x1="480" y1="100" x2="565" y2="100" stroke="#ca8a04" stroke-width="2.5" marker-end="url(#arrowRC)"/>
+  <text x="522" y="90" font-size="9" fill="#854d0e" text-anchor="middle">SQL query</text>
+
+  <line x1="565" y1="130" x2="480" y2="130" stroke="#6b7280" stroke-width="2.5" marker-end="url(#arrowRC)"/>
+  <text x="522" y="147" font-size="9" fill="#6b7280" text-anchor="middle">rows</text>
+
+  <text x="390" y="200" font-size="10" fill="#6b7280" text-anchor="middle">two separate connections, each with its own port and protocol</text>
+  <text x="390" y="218" font-size="10" fill="#6b7280" text-anchor="middle">either one can fail without the other knowing why</text>
+
+  <defs>
+    <marker id="arrowRC" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
